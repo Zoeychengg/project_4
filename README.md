@@ -31,13 +31,29 @@ DATA is responsible to analyze the mosquito trap location, testing and spraying 
 - To conduct a cost-benefit analysis on the annual cost projections for various level of pesticide coverage and the effects of these various levels of pesticide coverage
 
 ## Executive Summary
-DATA has completed the review on surveillance and control program tasked by CDC, and CDC and CDPH's support on DATA's recommendations. DATA Explortory Data Analysis (EDA)'s findings show that a high count of mosquitos (approx 1500) leads to a garuanteed presence of WNV, WNV is only seen in 3 mosquito species - CULEX PIPIENS/RESTUANS, CULEX PIPIENS and CULEX RESTUANS, and there is a high likelihood that not all species of mosquitoes found in the trap will carry WNV. Last but not least, it might be worth focusing on the control of 2 species (CULEX PIPIENS & CULEX PIPIENS/RESTUANS). DATA has built a classification model with high sensitivity and specifity, achieving a ROC AUC score of ~0.75 in Kaggle.
+DATA has completed the review on surveillance and control program through data analytics as well as the cost-benefit analysis. DATA has built and delivered a classification model with high sensitivity and specifity, achieving a ROC AUC score of ~0.75 in Kaggle. The EDA, modeling and cost-benefit analysis arrives at the following conclusion:
+- EDA shows that while it is true that dry condition (low wet bulb temperature) is more favourable for presence of WNV, hot temperature does not
+- High mosquito counts (approx 1500) shows that the presence of WNV is almost guaranteed
+- 2 species (CULEX PIPIENS & CULEX PIPIENS/RESTUANS) of mosquitos exceeded the count of 1000
+- WNV is only seen in 3 mosquito species: CULEX PIPIENS/RESTUANS, CULEX PIPIENS and CULEX RESTUANS 
+- High likelihood that not all species of mosquitoes found in the trap will carry WNV
+- Effectiveness of current pesticide deployment plan might not be optimal as the emphasis is not on areas with high mosquito counts or presence of WNV 
 
-It is recommended for CDC and CDPH to accept DATA's recommendations.
+CDC and CDPH to support the following recommendations:
+- New pesticide deployment plan which places more emphasis on areas with high mosquito counts or presence of WNV
+- DATA to further narrow the study to the control of CULEX PIPIENS & RESTUANS mosquitoes for a period of 12 months as the EDA shows these are the main carriers of WNV
+- Attachment of 2 x DATA data warehouse engineers to aid in the data collection process for spray datasets for a period of 12 months
 
 ## Project Planning
 - Project Milestones: https://github.com/Zoeychengg/project_4/milestones
 - Task Breakdown: https://github.com/Zoeychengg/project_4/projects/1
+
+## Intro to Datasets
+Datasets provdied:
+- Data of 2007, 2009, 2011 & 2013
+- Data to predict on: 2008, 2010, 2012 and 2014
+- Weather data: 2007 to 2014
+- Spray data: 2011 & 2013
 
 ## EDA
 The following shows the EDA process:
@@ -48,7 +64,9 @@ The following shows the EDA process:
 5. Mosquitoes Species Analysis
 
 The following shows a summary on the EDA findings:
-- High count of mosquitos (approx 1500) shows that the presence of WNV is almost garuanteed
+- Identified a possible seasonal trend of mosquito breeding, usually picks up in July and start decreasing after September/October
+- Investigated the claim that hot and dry conditions are more favorable for WNV. Verified that while the condition of dry (low wet bulb temperature) is true, hot temperature does not. EDA shows that higher temperature leads to higher chances of WNV presence 
+- High count of mosquitos (approx 1500) shows that the presence of WNV is almost guaranteed
 - 2 species (CULEX PIPIENS & CULEX PIPIENS/RESTUANS) of mosquitos ever exceeded the count of 1000. It might be worth focusing on the control of these 2 species in the future
 - WNV is only seen in 3 mosquito species: CULEX PIPIENS/RESTUANS, CULEX PIPIENS and CULEX RESTUANS 
 - High likelihood that not all species of mosquitoes found in the trap will carry WNV
