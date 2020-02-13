@@ -33,7 +33,7 @@ DATA is responsible to analyze the mosquito trap location, testing and spraying 
 ## Executive Summary
 DATA has completed the review on surveillance and control program tasked by CDC, and CDC and CDPH's support on DATA's recommendations. DATA Explortory Data Analysis (EDA)'s findings show that a high count of mosquitos (approx 1500) leads to a garuanteed presence of WNV, WNV is only seen in 3 mosquito species - CULEX PIPIENS/RESTUANS, CULEX PIPIENS and CULEX RESTUANS, and there is a high likelihood that not all species of mosquitoes found in the trap will carry WNV. Last but not least, it might be worth focusing on the control of 2 species (CULEX PIPIENS & CULEX PIPIENS/RESTUANS). DATA has built a classification model with high sensitivity and specifity, achieving a ROC AUC score of ~0.75 in Kaggle.
 
-
+It is recommended for CDC and CDPH to accept DATA's recommendations.
 
 ## Project Planning
 - Project Milestones: https://github.com/Zoeychengg/project_4/milestones
@@ -70,15 +70,11 @@ The following shows the modeling process:
 5. Model Evaluation
 
 The following shows the models built and the corresponding ROC AUC score used for model evaluation:
-1. Logistic Regression
-- CV: 0.893 
-- Test: 0.737
-2. Random Forest
-- CV: 0.972
-- Test: 0.714 
-3. XGBoost
-- CV: 0.984 
-- Test: 0.635
+|Model |Cross Validation |Test |
+|:-----|:-----|:-----|
+|Logistic Regression | 0.893 | 0.737 |
+|Random Forest | 0.972 | 0.714 | 
+|XGBoost | 0.984 | 0.635 |
 
 The Random Forest model was selected for Kaggle submission, yielded a ROC AUC score of approximately 0.75.
 
