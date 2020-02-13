@@ -31,20 +31,24 @@ DATA is responsible to analyze the mosquito trap location, testing and spraying 
 - To conduct a cost-benefit analysis on the annual cost projections for various level of pesticide coverage and the effects of these various levels of pesticide coverage
 
 ## Executive Summary
+DATA has completed the review on surveillance and control program tasked by CDC, and seeks CDC and CDPH's support to suppport on DATA's recommendations.
+
 
 ## Project Planning
 - Project Milestones: https://github.com/Zoeychengg/project_4/milestones
 - Task Breakdown: https://github.com/Zoeychengg/project_4/projects/1
 
 ## EDA
-  
+
+
+
 ## Feature Engineering
 The following shows the feature engineering process:
-Feature Elimination
-Encoding of Categorical Features
-Data Scaling
-Handling of imbalance WNV present data
-
+1. Traps Location Clustering
+2. Feature Elimination
+3. Encoding of Categorical Features
+4. Data Scaling
+5. Handling of imbalance WNV present data
 
 ## Modeling
 The following shows the modeling process:
@@ -52,9 +56,9 @@ The following shows the modeling process:
 2. Hyperparameter Tuning
 3. Cross Validation
 4. Test Prediction
-5. Evaluation
+5. Model Evaluation
 
-The following shows the models built and the ROC AUC score used for evaluation:
+The following shows the models built and the corresponding ROC AUC score used for model evaluation:
 1. Logistic Regression
 - CV: 0.893 
 - Test: 0.737
@@ -62,14 +66,13 @@ The following shows the models built and the ROC AUC score used for evaluation:
 - CV: 0.972
 - Test: 0.714 
 3. XGBoost
-- Train: 0.984 
+- CV: 0.984 
 - Test: 0.635
 
 The Random Forest model was selected for Kaggle submission, yielded a ROC AUC score of approximately 0.75.
 
 ## Cost-Benefit Analysis
 
-## Executive Summary
 
 ## File List
 
