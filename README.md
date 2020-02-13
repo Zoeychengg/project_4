@@ -27,11 +27,12 @@ DATA is responsible to analyze the mosquito trap location, testing and spraying 
 
 ## Problem Statement
 
-- To build a model and make predictions on the probability that WNV is presesent so as to aid CDC in deriving an effective pesticide deployment plan
+- To build a classification model with high sensitivity and specificity on the presence of WNV at a specific place and time so as to aid CDC in deriving an effective pesticide deployment plan
 - To conduct a cost-benefit analysis on the annual cost projections for various level of pesticide coverage and the effects of these various levels of pesticide coverage
 
 ## Executive Summary
-DATA has completed the review on surveillance and control program tasked by CDC, and seeks CDC and CDPH's support to suppport on DATA's recommendations.
+DATA has completed the review on surveillance and control program tasked by CDC, and CDC and CDPH's support on DATA's recommendations. DATA Explortory Data Analysis (EDA)'s findings show that a high count of mosquitos (approx 1500) leads to a garuanteed presence of WNV, WNV is only seen in 3 mosquito species - CULEX PIPIENS/RESTUANS, CULEX PIPIENS and CULEX RESTUANS, and there is a high likelihood that not all species of mosquitoes found in the trap will carry WNV. Last but not least, it might be worth focusing on the control of 2 species (CULEX PIPIENS & CULEX PIPIENS/RESTUANS). DATA has built a classification model with high sensitivity and specifity, achieving a ROC AUC score of ~0.75 in Kaggle.
+
 
 
 ## Project Planning
@@ -44,14 +45,13 @@ The following shows the EDA process:
 2. Explore the relations between WNV and Month, Temperature, Number of Mosquitos 
 3. Using ANOVA to see if the means between the presence of WnvPresent for number of mosquitos differs statistically
 4. Visualizing Number of Mosquitos feature over Month
-5. Mosquitos Spieces Analysis
+5. Mosquitoes Species Analysis
 
 The following shows a summary on the EDA findings:
-- High count of mosquitos (approx 1500) shows that the presence of WnV is almost garuanteed
-- 2 species (CULEX PIPIENS & CULEX PIPIENS/RESTUANS) of mosquitos ever exceeded the count of 1000. Might be worth focusing on the control of these 2 species in the future
+- High count of mosquitos (approx 1500) shows that the presence of WNV is almost garuanteed
+- 2 species (CULEX PIPIENS & CULEX PIPIENS/RESTUANS) of mosquitos ever exceeded the count of 1000. It might be worth focusing on the control of these 2 species in the future
 - WNV is only seen in 3 mosquito species: CULEX PIPIENS/RESTUANS, CULEX PIPIENS and CULEX RESTUANS 
-- High likelihood that not all species of mosquitoes found in the trap will carry the West Nile Virus
-
+- High likelihood that not all species of mosquitoes found in the trap will carry WNV
 
 ## Feature Engineering
 The following shows the feature engineering process:
@@ -100,13 +100,7 @@ The benefit could be in terms of a decrease in the number of mosquitoes post-spr
 
 The benefit can also be measured in terms of savings in the medical expenses, as fewer people will be infected with mosquitos, people taking few or no medical leaves, among others. **A typical household with employer health coverage spends about USD 800 a year in out-of-pocket costs, not counting premiums, according to research from the Commonwealth Fund. At the high end of the range, those costs can top USD 5,000 a year** (https://www.chicagobusiness.com/health-care/health-insurance-costs-surpass-20000-year-hitting-record).   
 
-
-
-
-
-
 ## File List
-
 
 ### Assets File Descriptions
 **train.csv, test.csv - the training and test set of the main dataset.**    
