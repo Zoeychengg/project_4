@@ -5,14 +5,12 @@
 2. Problem Statement
 3. Executive Summary
 4. Project Planning
-5. EDA
-5. Feature Engineering
-6. Modeling
-7. Cost-Benefit Analysis
-8. Conclusion and Recommendations
-9. Assets File Descriptions
-10. Dataset File Descriptions
-11. Codes File Descriptions
+5. Intro to Datasets
+6. EDA
+7. Feature Engineering
+8. Modeling
+9. Cost-Benefit Analysis
+9. File List
 
 ## Background
 West Nile Virus is most commonly spread to humans through infected mosquitos. Due to the recent epidemic in City of Chicago, Chicago Department of Publich Health (CDPH) had established a surveillance and control program. The program entails setting mosquito traps, testing for WNV and spraying of airborne pesticides in the city.
