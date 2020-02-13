@@ -83,6 +83,21 @@ The following shows the models built and the corresponding ROC AUC score used fo
 The Random Forest model was selected for Kaggle submission, yielded a ROC AUC score of approximately 0.75.
 
 ## Cost-Benefit Analysis
+The above graph shows the various features and their correlation with West Nile virus. Based on correlation, the number of mosquitoes is 1 times as likely to detect virus. However, it is surprising to see that from the data given, spraying does not have a significant impact on virus detection. Maybe there are other carriers of West Nile virus such as birds which do not get affected due to the spray done on land. 
+
+The dataset provided gives information on different set of locations (in terms of latitude and longitude) for Spray and trap. This makes it difficult to identify the mosquito trap where virus is detected was sprayed. More information on county-wise spray and trap locations might be helpful in analysing the relationship between spray and virus detection. 
+
+The product used to control the adult mosquitoes in Chicago, Zenivex™, is applied at a rate of 1.5 fluid ounces per acre. It is approved for use by the U.S. Environmental Protection Agency and is used to control mosquitoes in outdoor residential and recreational areas.
+
+**As per our calculations, the total estimated cost for Mosquito control spray is $6877.7 for an estimated area of 7037.14 acres.**
+
+The benefit could be in terms of a decrease in the number of mosquitoes post-spray. Also, significant number of deaths are caused because of West Nile Virus in Chicago. The city is ranked fourth in 2019 in a list of metro areas as one of the Mosquito Hot Spots in the nation (https://patch.com/illinois/chicago/chicagos-mosquito-problem-among-worst-nation).   
+
+The benefit can also be measured in terms of savings in the medical expenses, as fewer people will be infected with mosquitos, people taking few or no medical leaves, among others. **A typical household with employer health coverage spends about USD 800 a year in out-of-pocket costs, not counting premiums, according to research from the Commonwealth Fund. At the high end of the range, those costs can top USD 5,000 a year** (https://www.chicagobusiness.com/health-care/health-insurance-costs-surpass-20000-year-hitting-record).   
+
+
+
+
 
 
 ## File List
