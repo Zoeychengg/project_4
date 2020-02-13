@@ -39,7 +39,18 @@ DATA has completed the review on surveillance and control program tasked by CDC,
 - Task Breakdown: https://github.com/Zoeychengg/project_4/projects/1
 
 ## EDA
+The following shows the EDA process:
+1. Rolling average of 30 days for weather data
+2. Explore the relations between WNV and Month, Temperature, Number of Mosquitos 
+3. Using ANOVA to see if the means between the presence of WnvPresent for number of mosquitos differs statistically
+4. Visualizing Number of Mosquitos feature over Month
+5. Mosquitos Spieces Analysis
 
+The following shows a summary on the EDA findings:
+- High count of mosquitos (approx 1500) shows that the presence of WnV is almost garuanteed
+- 2 species (CULEX PIPIENS & CULEX PIPIENS/RESTUANS) of mosquitos ever exceeded the count of 1000. Might be worth focusing on the control of these 2 species in the future
+- WNV is only seen in 3 mosquito species: CULEX PIPIENS/RESTUANS, CULEX PIPIENS and CULEX RESTUANS 
+- High likelihood that not all species of mosquitoes found in the trap will carry the West Nile Virus
 
 
 ## Feature Engineering
