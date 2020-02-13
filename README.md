@@ -30,12 +30,12 @@ DATA is responsible to analyze the mosquito trap location, testing and spraying 
 
 ## Executive Summary
 DATA has completed the review on surveillance and control program through data analytics as well as the cost-benefit analysis. DATA has built and delivered a classification model with high sensitivity and specifity, achieving a ROC AUC score of ~0.75 in Kaggle. The EDA, modeling and cost-benefit analysis arrives at the following conclusion:
-- EDA shows that while it is true that dry condition (low wet bulb temperature) is more favourable for presence of WNV, hot temperature does not
+- EDA shows that while it is true that dry condition (low wet bulb temperature) is more favourable for presence of WNV, hot temperature does not (SOLO: EH HIGH TEMP IS CORRELATED TO PRESENCE, HIGH TEMPERATURE IS HOT CONDITIONS WHATTTTTTTT)
 - High mosquito counts (approx 1500) shows that the presence of WNV is almost guaranteed
 - 2 species (CULEX PIPIENS & CULEX PIPIENS/RESTUANS) of mosquitos exceeded the count of 1000
 - WNV is only seen in 3 mosquito species: CULEX PIPIENS/RESTUANS, CULEX PIPIENS and CULEX RESTUANS 
 - High likelihood that not all species of mosquitoes found in the trap will carry WNV
-- Effectiveness of current pesticide deployment plan might not be optimal as the emphasis is not on areas with high mosquito counts or presence of WNV 
+- Effectiveness of current pesticide deployment plan might not be optimal as the emphasis is not on areas with high mosquito counts or presence of WNV (SOLO: MIGHT NOT BE TRUE. WHAT IF THE AREAS WITH LOW COUNTS ARE DUE TO THE SPRAY? INFERENCING MODEL IS SUPPOSED TO HELP US DRAW INFERENCE OF IMPACT OF SPRAY ON WNV PRESENCE)
 
 CDC and CDPH to support the following recommendations:
 - New pesticide deployment plan which places more emphasis on areas with high mosquito counts or presence of WNV
@@ -63,7 +63,7 @@ The following shows the EDA process:
 
 The following shows a summary on the EDA findings:
 - Identified a possible seasonal trend of mosquito breeding, usually picks up in July and start decreasing after September/October
-- Investigated the claim that hot and dry conditions are more favorable for WNV. Verified that while the condition of dry (low wet bulb temperature) is true, hot temperature does not. EDA shows that higher temperature leads to higher chances of WNV presence 
+- Investigated the claim that hot and dry conditions are more favorable for WNV. Verified that while the condition of dry (low wet bulb temperature) is true, hot temperature does not. EDA shows that higher temperature leads to higher chances of WNV presence (SOLO: EH HIGH TEMP IS CORRELATED TO PRESENCE, HIGH TEMPERATURE IS HOT CONDITIONS WHATTTTTTTT)
 - High count of mosquitos (approx 1500) shows that the presence of WNV is almost guaranteed
 - 2 species (CULEX PIPIENS & CULEX PIPIENS/RESTUANS) of mosquitos ever exceeded the count of 1000. It might be worth focusing on the control of these 2 species in the future
 - WNV is only seen in 3 mosquito species: CULEX PIPIENS/RESTUANS, CULEX PIPIENS and CULEX RESTUANS 
