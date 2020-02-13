@@ -83,7 +83,12 @@ The following shows the models built and the corresponding ROC AUC score used fo
 The Random Forest model was selected for Kaggle submission, yielded a ROC AUC score of approximately 0.75.
 
 ## Cost-Benefit Analysis
-The above graph shows the various features and their correlation with West Nile virus. Based on correlation, the number of mosquitoes is 1 times as likely to detect virus. However, it is surprising to see that from the data given, spraying does not have a significant impact on virus detection. Maybe there are other carriers of West Nile virus such as birds which do not get affected due to the spray done on land. 
+The following shows the Cost-Benefit Analysis process:
+1. Predicting the cluster of spray dataset based on the clusters of aggregated train and weather dataset.
+2. Removing the multicollinear features from the daatset.
+3. Built a logistic regression model to study the effect of spray and other explanatory features on WNV.
+
+The cost-benefit analysis explored the various features and their correlation with West Nile virus. Based on correlation, the number of mosquitoes is 1 times as likely to detect virus. However, it is surprising to see that from the data given, spraying does not have a significant impact on virus detection. Maybe there are other carriers of West Nile virus such as birds which do not get affected due to the spray done on land. 
 
 The dataset provided gives information on different set of locations (in terms of latitude and longitude) for Spray and trap. This makes it difficult to identify the mosquito trap where virus is detected was sprayed. More information on county-wise spray and trap locations might be helpful in analysing the relationship between spray and virus detection. 
 
