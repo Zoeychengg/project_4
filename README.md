@@ -57,7 +57,7 @@ Datasets provdied:
 The following shows the EDA process:
 1. Rolling average of 30 days for weather data
 2. Explore the relations between WNV and Month, Temperature, Number of Mosquitos 
-3. Using ANOVA to see if the means between the presence of WnvPresent for number of mosquitos differs statistically
+3. Using ANOVA to see if the means between the presence of WnvPresent for the various features differ statistically
 4. Visualizing Number of Mosquitos feature over Month
 5. Mosquitoes Species Analysis
 
@@ -71,11 +71,11 @@ The following shows a summary on the EDA findings:
 
 ## Feature Engineering
 The following shows the feature engineering process:
-1. Traps Location Clustering
+1. Location Clustering of traps
 2. Feature Elimination
 3. Encoding of Categorical Features
 4. Data Scaling
-5. Handling of imbalance WNV present data
+5. Handling of imbalance WNV present data via SMOTE
 
 ## Modeling
 The following shows the modeling process:
@@ -92,15 +92,15 @@ The following shows the models built and the corresponding ROC AUC score used fo
 |Random Forest | 0.972 | 0.714 | 
 |XGBoost | 0.984 | 0.635 |
 
-The Random Forest model was selected for Kaggle submission, yielded a ROC AUC score of approximately 0.75.
+The Logistic Regression model was selected for Kaggle submission, yielded a ROC AUC score of approximately 0.75.
 
 ## Cost-Benefit Analysis
 The following shows the Cost-Benefit Analysis process:
-1. Predicting the cluster of spray dataset based on the clusters of aggregated train and weather dataset.
+1. Clustering the locations of spray dataset based on the clusters of aggregated train and weather dataset.
 2. Removing the multicollinear features from the daatset.
 3. Built a logistic regression model to study the effect of spray and other explanatory features on WNV.
 
-The cost-benefit analysis explored the various features and their correlation with West Nile virus. Based on correlation, the number of mosquitoes is 1 times as likely to detect virus. However, it is surprising to see that from the data given, spraying does not have a significant impact on virus detection. Maybe there are other carriers of West Nile virus such as birds which do not get affected due to the spray done on land. 
+The cost-benefit analysis explored the various features and their correlation with West Nile virus. Based on correlation, the number of mosquitoes is 1 times as likely to detect virus. However, it is surprising to see that from the data given, spraying does not have a significant impact on virus detection. Maybe there are other carriers of West Nile virus such as birds which do not get affected due to the spray done on land. (SOLO: HOW DID WE DRAW THIS CONCLUSION OF THE BIRDS? ANY BACKING RESEARCH OR ARTICLES?)
 
 The dataset provided gives information on different set of locations (in terms of latitude and longitude) for Spray and trap. This makes it difficult to identify the mosquito trap where virus is detected was sprayed. More information on county-wise spray and trap locations might be helpful in analysing the relationship between spray and virus detection. 
 
